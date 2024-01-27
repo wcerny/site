@@ -45,30 +45,21 @@
         }
 
         .main-content {
-            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center; /* Center content horizontally */
             text-align: center; /* Center text within the container */
         }
 
-        .main-content img {
+        .left-column {
+            flex: 0 0 50%; /* Fixed width for left column (adjust as needed) */
+        }
+
+        .left-column img {
             max-width: 100%;
             height: auto;
             border-radius: 8px 8px 0 0;
             margin: 0 auto; /* Center image horizontally within the container */
-        }
-
-        .subtitle {
-            text-align: center; /* Center subtitle text */
-            padding: 5px 20px;
-            font-size: 18px;
-            margin-bottom: 0;
-        }
-
-        .main-content p {
-            margin: 3px 20px 5px;
-            color: #000; /* Black text color */
         }
 
         .caption {
@@ -103,6 +94,22 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
+        .main-content p {
+            margin: 3px 20px 5px;
+            color: #000; /* Black text color */
+        }
+
+        .right-column {
+            flex: 1; /* Take up the remaining space in the container */
+        }
+
+        .subtitle {
+            text-align: center; /* Center subtitle text */
+            padding: 5px 20px;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 
@@ -114,24 +121,13 @@
         Ph.D. Student in Astronomy at Yale University
     </div>
     <div class="container">
-        <div class="main-content">
-            <img src="./resources/LandingPagePhoto.png" alt="My Photo" style="width: 85%;">
+        <div class="main-content left-column">
+            <img src="./resources/LandingPagePhoto.png" alt="My Photo">
             <div class="caption">
                 Me, in the Hale Library of the Carnegie Observatories in Pasadena (circa 2021)
-                <div class="button-container">
-                    <div class="button-row">
-                        <a href="link2" class="button">Current Projects</a>
-                        <a href="link1" class="button">Outreach</a>
-                    </div>
-                    <div class="button-row">
-                        <a href="link3" class="button">Codes and Data</a>
-                        <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22cerny%2Cw%22&sort=date%20desc%2C%20bibcode%20desc"
-                            class="button">ADS Library</a>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="main-content">
+        <div class="main-content right-column">
             <div class="subtitle">
                 About Me
             </div>
@@ -154,6 +150,17 @@
                 Prof. Marla Geha (my graduate advisor at Yale), Prof. Alex Drlica-Wagner (UChicago), Prof. Ting Li (Toronto), Dr.
                 Josh Simon (Carnegie Obs.), and Dr. Andrew Pace (CMU).
             </p>
+            <div class="button-container">
+                <div class="button-row">
+                    <a href="link2" class="button">Current Projects</a>
+                    <a href="link1" class="button">Outreach</a>
+                </div>
+                <div class="button-row">
+                    <a href="link3" class="button">Codes and Data</a>
+                    <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22cerny%2Cw%22&sort=date%20desc%2C%20bibcode%20desc"
+                        class="button">ADS Library</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
