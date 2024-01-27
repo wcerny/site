@@ -62,22 +62,6 @@
             margin: 0 auto; /* Center image horizontally within the container */
         }
 
-        .right-column {
-            flex: 1; /* Take up the remaining space in the container */
-        }
-
-        .subtitle {
-            text-align: center; /* Center subtitle text */
-            padding: 5px 20px;
-            font-size: 18px;
-            margin-bottom: 0;
-        }
-
-        .main-content p {
-            margin: 3px 20px 5px;
-            color: #000; /* Black text color */
-        }
-
         .caption {
             background-color: #f0f0f0;
             padding: 10px;
@@ -110,6 +94,22 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
+        .main-content p {
+            margin: 3px 20px 5px;
+            color: #000; /* Black text color */
+        }
+
+        .right-column {
+            flex: 1; /* Take up the remaining space in the container */
+        }
+
+        .subtitle {
+            text-align: center; /* Center subtitle text */
+            padding: 5px 20px;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 
@@ -122,20 +122,20 @@
     </div>
     <div class="container">
         <div class="main-content left-column">
+            <div class="button-container">
+                <div class="button-row">
+                    <a href="link2" class="button">Current Projects</a>
+                    <a href="link1" class="button">Outreach</a>
+                </div>
+                <div class="button-row">
+                    <a href="link3" class="button">Codes and Data</a>
+                    <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22cerny%2Cw%22&sort=date%20desc%2C%20bibcode%20desc"
+                        class="button">ADS Library</a>
+                </div>
+            </div>
             <img src="./resources/LandingPagePhoto.png" alt="My Photo">
             <div class="caption">
                 Me, in the Hale Library of the Carnegie Observatories in Pasadena (circa 2021)
-                <div class="button-container">
-                    <div class="button-row">
-                        <a href="link2" class="button">Current Projects</a>
-                        <a href="link1" class="button">Outreach</a>
-                    </div>
-                    <div class="button-row">
-                        <a href="link3" class="button">Codes and Data</a>
-                        <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22cerny%2Cw%22&sort=date%20desc%2C%20bibcode%20desc"
-                            class="button">ADS Library</a>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="main-content right-column">
