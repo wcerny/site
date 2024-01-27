@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | William Cerny </title>
+    <title>Home | William Cerny</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <style>
         body {
@@ -46,16 +46,21 @@
 
         .main-content {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text within the container */
         }
 
         .main-content img {
             max-width: 100%;
             height: auto;
             border-radius: 8px 8px 0 0;
+            margin: 0 auto; /* Center image horizontally within the container */
         }
 
         .subtitle {
-            text-align: left;
+            text-align: center; /* Center subtitle text */
             padding: 5px 20px;
             font-size: 18px;
             margin-bottom: 0;
@@ -110,18 +115,18 @@
     </div>
     <div class="container">
         <div class="main-content">
-            <img src="./resources/LandingPagePhoto.png" alt="My Photo" style="width: 85%; margin: 0 auto;">
+            <img src="./resources/LandingPagePhoto.png" alt="My Photo" style="width: 85%;">
             <div class="caption">
                 Me, in the Hale Library of the Carnegie Observatories in Pasadena (circa 2021)
                 <div class="button-container">
                     <div class="button-row">
-                        
                         <a href="link2" class="button">Current Projects</a>
-                      <a href="link1" class="button">Outreach</a>
+                        <a href="link1" class="button">Outreach</a>
                     </div>
                     <div class="button-row">
                         <a href="link3" class="button">Codes and Data</a>
-                        <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22cerny%2Cw%22&sort=date%20desc%2C%20bibcode%20desc" class="button">ADS Library</a>
+                        <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=%20author%3A%22cerny%2Cw%22&sort=date%20desc%2C%20bibcode%20desc"
+                            class="button">ADS Library</a>
                     </div>
                 </div>
             </div>
@@ -131,13 +136,26 @@
                 About Me
             </div>
             <p>
-                Welcome to my site! I'm Will, a second-year Ph.D. student in the Department of Astronomy at Yale University. My research seeks to identify the low-mass threshold of galaxy formation through the discovery of "ultra-faint" Milky Way satellites and the subsequent measurement of their internal kinematics, dark matter contents, and chemistries through spectroscopy.
+                Welcome to my site! I'm Will, a second-year Ph.D. student in the Department of Astronomy at Yale University. My
+                research seeks to identify the low-mass threshold of galaxy formation through the discovery of "ultra-faint"
+                Milky Way satellites and the subsequent measurement of their internal kinematics, dark matter contents, and
+                chemistries through spectroscopy.
             </p>
             <br>
             <p>
-                Most of my discovery work is carried out as part of the DELVE Survey - a 125+ night effort to image the southern sky with the Dark Energy Camera on the 4m Blanco Telescope in Chile. The spectroscopic component of my work then involves obtaining with the largest optical telescopes on the planet, including the 6.5m Magellan telescopes (Chile) and the 10m Keck telescopes (Hawai'i).
+                Most of my discovery work is carried out as part of the DELVE Survey - a 125+ night effort to image the southern
+                sky with the Dark Energy Camera on the 4m Blanco Telescope in Chile. The spectroscopic component of my work then
+                involves obtaining with the largest optical telescopes on the planet, including the 6.5m Magellan telescopes
+                (Chile) and the 10m Keck telescopes (Hawai'i).
             </p>
             <br>
             <p>
-                I am fortunate to be able to collaborate closely with many wonderful scientists and mentors, especially including Prof. Marla Geha (my graduate advisor at Yale), Prof. Alex Drlica-Wagner (UChicago), Prof. Ting Li (Toronto), Dr. Josh Simon (Carnegie Obs.), and Dr. Andrew Pace (CMU). 
+                I am fortunate to be able to collaborate closely with many wonderful scientists and mentors, especially including
+                Prof. Marla Geha (my graduate advisor at Yale), Prof. Alex Drlica-Wagner (UChicago), Prof. Ting Li (Toronto), Dr.
+                Josh Simon (Carnegie Obs.), and Dr. Andrew Pace (CMU).
+            </p>
+        </div>
+    </div>
+</body>
 
+</html>
