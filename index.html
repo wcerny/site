@@ -19,14 +19,19 @@
         .title, .small-title, .subtitle {
             text-align: center;
             font-family: 'Lato', sans-serif;
-            font-weight: bold;
             color: #000; /* Black text color */
         }
 
         .title {
-            padding: 10px 20px;
-            font-size: 24px;
-            margin-bottom: -5px;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .title span {
+            display: block;
+            font-size: 18px;
+            font-weight: normal;
         }
 
         .small-title {
@@ -107,7 +112,7 @@
         .subtitle {
             text-align: center; /* Center subtitle text */
             padding: 5px 20px;
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 0;
         }
     </style>
@@ -115,10 +120,7 @@
 
 <body>
     <div class="title">
-        William Cerny
-    </div>
-    <div class="small-title">
-        Ph.D. Student in Astronomy at Yale University
+        William Cerny<span>Ph.D. Student in Astronomy at Yale University</span>
     </div>
     <div class="container">
         <div class="main-content left-column">
