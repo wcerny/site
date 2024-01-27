@@ -45,18 +45,25 @@
         }
 
         .main-content {
-            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center; /* Center content horizontally */
             text-align: center; /* Center text within the container */
         }
 
-        .main-content img {
+        .left-column {
+            flex: 0 0 50%; /* Fixed width for left column (adjust as needed) */
+        }
+
+        .left-column img {
             max-width: 100%;
             height: auto;
             border-radius: 8px 8px 0 0;
             margin: 0 auto; /* Center image horizontally within the container */
+        }
+
+        .right-column {
+            flex: 1; /* Take up the remaining space in the container */
         }
 
         .subtitle {
@@ -114,8 +121,8 @@
         Ph.D. Student in Astronomy at Yale University
     </div>
     <div class="container">
-        <div class="main-content">
-            <img src="./resources/LandingPagePhoto.png" alt="My Photo" style="width: 85%;">
+        <div class="main-content left-column">
+            <img src="./resources/LandingPagePhoto.png" alt="My Photo">
             <div class="caption">
                 Me, in the Hale Library of the Carnegie Observatories in Pasadena (circa 2021)
                 <div class="button-container">
@@ -131,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-content">
+        <div class="main-content right-column">
             <div class="subtitle">
                 About Me
             </div>
