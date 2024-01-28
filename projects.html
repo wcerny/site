@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | William Cerny</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title, .small-title, .subtitle {
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            color: #000; /* Black text color */
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .title span {
+            display: block;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .container {
+            display: flex;
+            max-width: 800px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text within the container */
+        }
+
+        .left-column {
+            flex: 0 0 50%; /* Fixed width for left column (adjust as needed) */
+        }
+
+        .left-column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+            margin: 0 auto; /* Center image horizontally within the container */
+        }
+
+        .right-column {
+            flex: 1; /* Take up the remaining space in the container */
+            padding: 10px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        William Cerny<span>Ph.D. Student in Astronomy at Yale University</span>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="project">
+                <div class="left-column">
+                    <img src="./resources/Project1Image.jpg" alt="Project 1 Image">
+                </div>
+                <div class="right-column">
+                    <h2>Project 1</h2>
+                    <p>Description for Project 1. This is a brief overview of the project, its goals, and its significance.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="left-column">
+                    <img src="./resources/Project2Image.jpg" alt="Project 2 Image">
+                </div>
+                <div class="right-column">
+                    <h2>Project 2</h2>
+                    <p>Description for Project 2. This is a brief overview of the project, its goals, and its significance.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="left-column">
+                    <img src="./resources/Project3Image.jpg" alt="Project 3 Image">
+                </div>
+                <div class="right-column">
+                    <h2>Project 3</h2>
+                    <p>Description for Project 3. This is a brief overview of the project, its goals, and its significance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
